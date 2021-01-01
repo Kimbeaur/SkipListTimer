@@ -8,8 +8,7 @@
 typedef struct zskiplistNode zskiplistNode;
 typedef void (*handler_pt) (zskiplistNode *node);
 struct zskiplistNode {
-    // sds ele;
-    // double score;
+  
     unsigned long score; // 时间戳
     handler_pt handler;
     /* struct zskiplistNode *backward; 从后向前遍历时使用*/
